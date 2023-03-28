@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebasneue';
+    src: url(fontes/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'bebasneue';
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(235,229,197);
+}
+
+/* ----------------- HEADER -----------------  */
+
+header {
+    box-shadow: 1px 1px 5px 1px black;
+    overflow: hidden;
+}
+
+.header__div {
+    padding: 35px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(180deg, rgb(47,167,101), rgb(6,61,30));
+}
+
+.header__menu {
+    padding: 10px 10px 0px 10px;
+    background-color: rgb(6,61,30);
+    color: white;
+}
+
+.link__menu {
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(131,225,173);
+    transition-duration: .5s;
+    display: inline-block;
+}
+
+.link__menu:hover {
+    display: inline-block;
+    color: rgb(6,61,30);
+    border-radius: 5px;
+    background-color: rgba(132, 226, 174, 0.849);
+}
+
+#header__h1 {
+    padding: 10px 0px 20px 0px;
+    font-family: 'bebasneue';
+    font-weight: lighter;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%);
+}
+
+#header__h2 {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%);
+}
+
+/* ----------------- MAIN -----------------  */
+
+main {
+    margin: auto;
+    padding: 25px 25px 25px 25px;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    line-height: 2em;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.308);
+    max-width: 800px;
+    min-width: 280px
+    ;
+}
+
+main > h1 {
+    font-family: 'idroid';
+    color: rgb(6,61,30);
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+
+main > h2 {
+    padding: 0px 0px 0px 0px;
+    font-family: 'idroid';
+    font-size: 1.3em;
+    font-weight: lighter;
+    text-indent: 5px;
+    color: rgb(26,92,55);
+    background-image: linear-gradient(90deg, rgba(132, 226, 174, 0.849), rgba(168, 255, 168, 0));
+}
+
+.main__link {
+    content: '\00A0\1F517';
+    padding: 2px 5px;
+    font-weight: bolder;
+    text-decoration: none;
+    outline: none;
+    color: rgb(26,92,55);
+    background-color: rgba(132, 226, 174, 0.849);
+}
+
+.clips_imagem {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+/* SECTION */
+
+
+.section__div {
+    background-color: rgb(131,225,173);
+    border-radius: 15px;
+    padding: 5px 5px 10px 5px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.308);
+/* OVERFLOW HIDDEN FAZ COM QUE OS FILHOS NÃO ULTRAPASSEM O LIMITE DO PAI */
+}
+
+#section__pergunta {
+    text-align: left;
+    padding: 5px 0px;
+    margin: -5px;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 1.4em;
+    color: white;
+    background-color: rgb(26,92,55);
+    vertical-align: center;
+    text-indent: 0.5em;
+}
+
+.section__conteudo{
+    columns: 2;
+    padding: 5px;
+    line-height: 1.3em;
+}
+
+.section__paragrafo {
+    padding: 5px;
+    text-indent: 1.5em;
+}
+
+.section__paragrafofinal {
+    padding: 10px 5px 5px 5px;
+    text-indent: 1.5em;
+}
+
+/* PARÁGRAFOS */
+
+.main__p {
+    padding: 15px 0px 15px 0px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: normal;
+    text-indent: 1.5em;
+}
+
+.importante_verde {
+    color: rgb(26,92,55);
+}
+
+.link_verde {
+    outline: none;
+    text-decoration: none;
+    color: green;
+}
+
+/* LINKS */
+
+/* VIDEO YOUTUBE */
+
+#main__videoyt {
+    padding: 30px 50px;
+    width: 100%;
+    height: 600px;
+}
+
+.holder__videoyt {
+    margin: 0px -25px 25px -25px;
+    background-color: rgb(6,61,30);
+}
+
+/* IMAGENS */
+
+.main__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.main__imagep {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* LISTAS */
+
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓';
+    font-weight: bolder;
+  }
+
+/* ----------------- FOOTER ----------------- */
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    color: white;
+    background-color: rgb(0, 60, 0);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.301);
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
